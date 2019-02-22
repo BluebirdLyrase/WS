@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+        <style>
+                .customers {
+                  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                  border-collapse: collapse;
+                  width: 100%;
+                }
+                
+                .customers td, .customers th {
+                  border: 1px solid #ddd;
+                  padding: 8px;
+                }
+                
+                .customers tr:nth-child(even){background-color: #f2f2f2;}
+                
+                .customers tr:hover {background-color: #ddd;}
+                
+                .customers th {
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  text-align: left;
+                  background-color: #4CAF50;
+                  color: white;
+                }
+                </style>
+
+
+ 
+</head>
+<body>
+    <h1>Products</h1>
+    <p><button id="get">Get Data</button></p>
+<table>
+<div id='datalist' class='customers'>Get data</div>
+</table>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
+
+<script
+  src="product.js">
+</script>
+</body>
+</html>
