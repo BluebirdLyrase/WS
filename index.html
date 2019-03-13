@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <title>Document</title>
-        <style>
-                .customers {
-                  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-                  border-collapse: collapse;
-                  width: 100%;
-                }
-                
-                .customers td, .customers th {
-                  border: 1px solid #ddd;
-                  padding: 8px;
-                }
-                
-                .customers tr:nth-child(even){background-color: #f2f2f2;}
-                
-                .customers tr:hover {background-color: #ddd;}
-                
-                .customers th {
-                  padding-top: 12px;
-                  padding-bottom: 12px;
-                  text-align: left;
-                  background-color: #4CAF50;
-                  color: white;
-                }
-                </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6030213005</title>
 
-
- 
 </head>
-<body>
-    <h1>Products</h1>
-    <p><button id="get">Get Data</button></p>
-<table>
-<div id='datalist' class='customers'>Get data</div>
-</table>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous">
-</script>
 
-<script
-  src="product.js">
-</script>
+<body class="TheBody">
+
+
+    <div class="flex-container">
+
+            <h0 class="WhiteHead col-12">
+                    How many years can you have left?</h0>
+    <div class="col-12 google-font-red">ใส่ วัน/เดือน/ปี เกิดของคุณ</div>  
+
+    <select name="" id="day" class="col-4 input">
+        <option value="Monday">Monday</option>
+        <option value="Teusday">Teusday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select>
+
+    <select name="" id="month" class="col-4 input" >
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select>
+    <div class="col-4">
+    <input type="text" class="col-11 input" id="year" name="Year"><br>
+    </div>
+
+    <div class ="col-12"><br><button id="go" class="button">PLAY</button><br><br></div>
+    <div class ="col-12 output" id="result"><h0 class="google-font-red col-12">***ใช้ปีคริสต์ศักราช</h0></div>
+    
+    <a href="#">
+            <div class ="col-12">
+    <h2 id="dc">Click "Play" Button</h2>
+            <img id="pic" src="https://www.computerhope.com/jargon/b/black.jpg" class="img">
+        </a>
+    </div>
+    
+    
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
