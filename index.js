@@ -7,7 +7,7 @@ $(function(){
     var post_names = ['1','2','3','4','5'];
     $('#go').click(function(){
         $('#go').hide(); 
-        $('#imgResult').hide()
+        $('#imgResult').hide() 
         $('#go').fadeIn(800); 
         $('#imgResult').fadeIn(800);
         var day = $('#day').val();
@@ -24,35 +24,41 @@ $(function(){
         'https://farm4.staticflickr.com/3264/2554428050_9ab3a2337d_b.jpg'
         ]
 
- 
-        
-        $('#reday').text(day); 
-        $('#remonth').text(month);     
-        $('#reyear').text(integer);    
         var date = new Date();
         var currentYear = date.getFullYear();
         var live = year-1941;
 
         ///////////Special////////////
         if(day=="Thursday"&&month=="March"&&year=="1999"){
-            $('#result').text("Happy birthday to me : )");
-            var photo1 = document.getElementById("pic");
-            photo1.setAttribute('src','https://i.pinimg.com/originals/e6/fb/5f/e6fb5f00728b24d5eacaecd2af5fae70.png');
-            $('#dc').text("Never had a birthday party. It too late btw "); 
+            $('#go').css("background-color","pink"); 
+            $('#month').css("background-color","pink"); 
+            $('#day').css("background-color","pink"); 
+            $('#year').css("background-color","pink"); 
+            $('#day').css("color","white"); 
+            $('#go').css("color","white"); 
+            $('#month').css("color","white"); 
+            $('#year').css("color","white"); 
+            $('#bar1').css("color","white"); 
+            $('#bar2').css("color","white"); 
+            $('#bar3').css("color","white");
+            $('#result').css("color","white");
+            $('#result').text("We have the same birthday");
+            $('#pic').attr('src','');
+            $('#dc').text(""); 
+            $('#body').css("background-image", "url(birthday.png)");  
         }
         //////////////////////////////
         else if(isNaN(integer)){
             console.log("๊User didn't type the year correctly");
             alert("PLEASE ENTER YOUR YEAR OF BIRTH!!!"); 
-            $('#result').text(""); 
-            var photo1 = document.getElementById("pic");
-            photo1.setAttribute('src','https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535');
+            $('#result').text("Please type your Year of birth correctly"); 
+            $('#pic').attr('src','https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535');
             $('#dc').text("What Are You Doing? Just Do What It Said!!"); 
         } else if(integer<1853){
             console.log("DEAD");
+            $('#result').text("omae wa mou shindeiru"); 
             $('#dc').text("You are already DEAD!! ..... if that isn't the case then, contact somebody!!! You gonna get famous by being the oldest human ever (:");
-            var photo1 = document.getElementById("pic");
-            photo1.setAttribute('src','https://i.ytimg.com/vi/wLp2Ukv8YPE/hqdefault.jpg');
+            $('#pic').attr('src','https://i.ytimg.com/vi/wLp2Ukv8YPE/hqdefault.jpg');
             $('#result').text(""); 
             
         } else if(integer>=1853&&integer<currentYear){
@@ -65,12 +71,11 @@ $(function(){
             $('#result').text("Sorry, but you have less then a year");    
             }else{
             $('#result').text("You have "+rdmYear+" Years left"); 
-        }
+            }
 
             ////////Picture////////
             var rdmPic = Math.floor(Math.random() * ArrayPic.length);
-            var photo1 = document.getElementById("pic");
-            photo1.setAttribute('src',ArrayPic[rdmPic]);
+            $('#pic').attr('src',ArrayPic[rdmPic]);
 
             /////////////DC////////////////
             if(rdmYear==0)
@@ -92,8 +97,10 @@ $(function(){
 
 
         } else if(integer>currentYear&&integer<2500){
+
             alert("ใจเย็นๆนะคุณยังไม่ได้เกิด")
         } else if(integer>=2500){
+
             alert("ใช้ปีคริสต์ศักราช!!!!!!")
         }
 

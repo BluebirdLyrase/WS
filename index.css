@@ -52,36 +52,33 @@ flex-wrap: wrap;
     height: auto;
 }
 
-.google-font-red{
-    font-family: 'Kanit', sans-serif;
-    color: red;
-    font-size: 10px
-}
+
 
 .input{
-    font-family: 'Kanit', sans-serif;
     font-size: 25px;
     background-color: rgb(63, 63, 63);
     width: 150px;
     text-align: left;
+
 }
 
 .inputT{
-    font-family: 'Kanit', sans-serif;
     font-size: 25px;
     text-align: right;
 
 }
 
 .output{
-    font-family: 'Kanit', sans-serif;
     font-size: 25px;
-
 }
 
-Body{
-background-color: black;
-}
+body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
 
 .button{
     background-color: rgb(63, 63, 63); 
@@ -131,7 +128,7 @@ a:hover h2 {
         height: auto;
         
     }
-    [class*="input"] {
+    [class*="put"] {
         font-size: 25px;
     }
 
@@ -139,17 +136,6 @@ a:hover h2 {
         font-size: 25px;
     }
 
-    .button{
-        background-color: rgb(63, 63, 63); 
-        border: none;
-        color: rgb(177, 177, 177);
-        padding:25px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 25px;
-        border-radius: 125px;
-    } 
 
     .WhiteHead{
         font-size: 35px;
@@ -169,7 +155,7 @@ a:hover h2 {
         height: auto;
         
     }
-    [class*="input"] {
+    [class*="put"] {
         font-size: 20px;
     }
 
@@ -178,15 +164,8 @@ a:hover h2 {
     }
 
     .button{
-        background-color: rgb(63, 63, 63); 
-        border: none;
-        color: rgb(177, 177, 177);
+        font-size: 10px;
         padding:15px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        border-radius: 125px;
     } 
 
     .WhiteHead{
@@ -205,20 +184,13 @@ a:hover h2 {
             height: auto;
             
         }
-        [class*="input"] {
+        [class*="put"] {
             font-size: 15px;
         }
     
         .button{
-            background-color: rgb(63, 63, 63); 
-            border: none;
-            color: rgb(177, 177, 177);
             padding:20px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
             font-size: 15px;
-            border-radius: 125px;
         } 
         a h2 {
             font-size: 15px;
