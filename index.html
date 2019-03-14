@@ -15,12 +15,14 @@
 
     <div class="flex-container">
 
-            <h0 class="WhiteHead col-12">
+    <h0 class="WhiteHead col-12">
                     How many years you have left?</h0>
+                    
     <div class="col-12 google-font-red">ใส่ วัน/เดือน/ปี เกิดของคุณ</div>  
-            
-    <span class="col-2 inputT">วันเกิด:</span>
-    <div class="col-2 ">         
+
+<div class="col-4 ">  
+        <br>           
+    <span class="inputT">วันเกิด:</span>
     <select name="" id="day" class="input">
         <option value="Monday">Monday</option>
         <option value="Teusday">Teusday</option>
@@ -30,9 +32,13 @@
         <option value="Saturday">Saturday</option>
         <option value="Sunday">Sunday</option>
     </select>
-    </div>  
-    <span class="inputT col-2">เดือนเกิด:</span>
-    <div class="col-2 "> 
+</div>
+
+     
+
+<div class="col-4"> 
+        <br>
+    <span class="inputT">เดือนเกิด:</span>
     <select name="" id="month" class="input" >
         <option value="January">January</option>
         <option value="February">February</option>
@@ -48,29 +54,35 @@
         <option value="December">December</option>
     </select>
     </div>  
-    <span class="col-2 inputT">ปีคริสต์ศักราช:</span>
-    <div class="col-2 ">
+
+    <br>
+
+<div class="col-4">
+        <br>
+    <span class="inputT">ปีคริสต์ศักราช:</span>
     <input type="text" class="input" id="year" name="Year"><br>
     </div>  
-    <div class ="col-12"><br><button id="go" class="button">PLAY</button><br><br></div>
+
+
     <div class ="col-12 output" id="result"></div>
     
     <a href="#">
-            <div class ="col-12">
-    <h2 id="dc">Click "Play" Button</h2>
+            <div class ="col-12" id="imgResult">
+    <h2 id="dc"></h2>
             <img id="pic" src="" class="img">
         </a>
     </div>
     
-    
-    </div>
+    <br><div class ="col-12"><button id="go" class="button">PLAY</button></div>
+
 
     <iframe width="0" height="0" src="https://www.youtube.com/embed/WCzl__5vZOM?rel=0&autoplay=1"
 frameborder="0" allow="autoplay"></iframe>
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+
+
 </body>
 
 </html>

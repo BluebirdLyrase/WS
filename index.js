@@ -6,6 +6,10 @@ $(function(){
     var pre_names = ['A','B','C','D','E'];
     var post_names = ['1','2','3','4','5'];
     $('#go').click(function(){
+        $('#go').hide(); 
+        $('#imgResult').hide()
+        $('#go').fadeIn(800); 
+        $('#imgResult').fadeIn(800);
         var day = $('#day').val();
         var month = $('#month').val();
         var year = $('#year').val();
@@ -95,4 +99,5 @@ $(function(){
 
         
     });
+
 });

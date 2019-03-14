@@ -42,13 +42,13 @@ flex-wrap: wrap;
 
 
 .WhiteHead{
-    font-size: 100%;
+    font-size: 40px;
     font-family: 'Kanit', sans-serif;
     font-size: 2em;
 }
 
 .img{
-    width: 500px;
+    width: 450px;
     height: auto;
 }
 
@@ -63,11 +63,14 @@ flex-wrap: wrap;
     font-size: 25px;
     background-color: rgb(63, 63, 63);
     width: 150px;
+    text-align: left;
 }
 
 .inputT{
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
+    text-align: right;
+
 }
 
 .output{
@@ -80,11 +83,11 @@ Body{
 background-color: black;
 }
 
- .button{
+.button{
     background-color: rgb(63, 63, 63); 
     border: none;
     color: rgb(177, 177, 177);
-    padding: 20x 10px;
+    padding: 25px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -117,8 +120,46 @@ a:hover h2 {
     opacity:1
 }
 
-@media only screen and (max-width: 898px) {
-    /* For mobile phones: */
+@media only screen and (max-width: 910px) {
+  /* For mobile phones: Ipad */
+    [class*="col-"] {
+      width: 100%;
+    }
+  
+    .img{
+        width: 500px;
+        height: auto;
+        
+    }
+    [class*="input"] {
+        font-size: 25px;
+    }
+
+    a h2 {
+        font-size: 25px;
+    }
+
+    .button{
+        background-color: rgb(63, 63, 63); 
+        border: none;
+        color: rgb(177, 177, 177);
+        padding:25px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        border-radius: 125px;
+    } 
+
+    .WhiteHead{
+        font-size: 35px;
+        font-family: 'Kanit', sans-serif;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: Iphone 9/7/8 plus */
     [class*="col-"] {
       width: 100%;
     }
@@ -129,8 +170,60 @@ a:hover h2 {
         
     }
     [class*="input"] {
-        font-size: 15px;
+        font-size: 20px;
     }
+
+    a h2 {
+        font-size: 20px;
+    }
+
+    .button{
+        background-color: rgb(63, 63, 63); 
+        border: none;
+        color: rgb(177, 177, 177);
+        padding:15px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 125px;
+    } 
+
+    .WhiteHead{
+        font-size: 30px;
+        font-family: 'Kanit', sans-serif;
+    }
+}
+@media only screen and (max-width: 375px) {
+        /* For mobile phones: GS5 */
+        [class*="col-"] {
+          width: 100%;
+        }
+      
+        .img{
+            width: 300px;
+            height: auto;
+            
+        }
+        [class*="input"] {
+            font-size: 15px;
+        }
+    
+        .button{
+            background-color: rgb(63, 63, 63); 
+            border: none;
+            color: rgb(177, 177, 177);
+            padding:20px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 125px;
+        } 
+        a h2 {
+            font-size: 15px;
+        }
     
 
-  }
+    }
+
