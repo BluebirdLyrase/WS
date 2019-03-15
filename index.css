@@ -144,6 +144,33 @@ a:hover h2 {
 
 }
 
+@media only screen and (max-width: 1024px) {
+    /* For mobile phones: Ipad pro */
+      [class*="col-"] {
+        width: 100%;
+      }
+    
+      .img{
+          width: 1000px;
+          height: auto;
+          
+      }
+      [class*="put"] {
+          font-size: 35px;
+      }
+  
+      a h2 {
+          font-size: 50px;
+      }
+  
+  
+      .WhiteHead{
+          font-size: 60px;
+          font-family: 'Kanit', sans-serif;
+      }
+  
+  }
+
 @media only screen and (max-width: 600px) {
     /* For mobile phones: Iphone 9/7/8 plus */
  
