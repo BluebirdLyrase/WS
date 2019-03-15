@@ -48,7 +48,7 @@ $(function(){
         }
         //////////////////////////////
         else if(isNaN(integer)){
-            console.log("๊User didn't type the year correctly");
+            console.log("User didn't type the year correctly");
             alert("PLEASE ENTER YOUR YEAR OF BIRTH!!!"); 
             $('#result').text("Please type your Year of birth correctly"); 
             $('#pic').attr('src','https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535');
@@ -58,7 +58,7 @@ $(function(){
             $('#result').text("omae wa mou shindeiru"); 
             $('#dc').text("You are already DEAD!! ..... if that isn't the case then, contact somebody!!! You gonna get famous by being the oldest human ever (:");
             $('#pic').attr('src','https://i.ytimg.com/vi/wLp2Ukv8YPE/hqdefault.jpg');
-            $('#result').text(""); 
+           
             
         } else if(integer>=1853&&integer<currentYear){
             ////////Year///////
