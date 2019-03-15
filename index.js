@@ -20,14 +20,7 @@ $(function(){
         var year = $('#year').val();
         var integer = parseInt(year)
         console.log(day + ',' + month);
-        var ArrayPic = ['https://www.img.in.th/images/0fae5999e4c6cbe9670e45ba2f216beb.jpg',
-        'https://www.img.in.th/images/a47955cabed17437d1cdecf901fbd9db.jpg',
-        'http://scientifist.com/wp-content/uploads/2017/03/FB-SuicideAI.jpg',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVyd6wTibwH9M6WH-CBcU30VNbC7gTNruSXP0r8rSmNJODdcXyQg',
-        'https://cdn.vox-cdn.com/thumbor/1-ERyN6iNc6GlY8q4ch7jyXJEpk=/0x0:1920x1080/1200x675/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/56442233/LDOJ_screenshot_1.0.jpg',
-        'https://farm4.staticflickr.com/3264/2554428050_9ab3a2337d_b.jpg',
-        'https://i.imgur.com/p7w5na5.jpg'
-        ]
+        var ArrayPic = ['pic/1.jpg','pic/2.jpg','pic/3.jpg','pic/4.jpg','pic/5.jpg','pic/6.jpg','pic/7.jpg']
         var rdmPic = Math.floor(Math.random() * ArrayPic.length);
         var ArrayPicText = ['You know this is just a website right? a student project website.',
         'Ever heard of Lynks disease? That might be the cause of your death',
@@ -62,22 +55,22 @@ $(function(){
             $('#bar2').css("color","white"); 
             $('#bar3').css("color","white");
             $('#result').css("color","white");
-            $('#body').css("background-image", "url(birthday.png)");  
+            $('#html').css("background-image", "url(pic/birthday.png)");  
  
-            showInput("We have the same birthday",'gif.gif'," ");
+            showInput("We have the same birthday",'pic/gif.gif'," ");
         }
       
         else if(isNaN(integer)){
             console.log("User didn't type the year correctly");
             alert("PLEASE ENTER YOUR YEAR OF BIRTH!!!"); 
             showInput("Please type your Year of birth correctly",
-            'https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535',
+            'pic/wat.jpg',
             "What Are You Doing? Just Do What It Said!!");
 
         } else if(integer<1853){
             console.log("DEAD");
             showInput("omae wa mou shindeiru",
-            'https://i.ytimg.com/vi/wLp2Ukv8YPE/hqdefault.jpg',
+            'pic/dead.jpg',
             "You are already DEAD!! ..... if that isn't the case then, contact somebody!!! You gonna get famous by being the oldest human ever (:");
             
           ////////////////////////////////////////////////////////////////////////////
