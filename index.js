@@ -1,5 +1,5 @@
 
-function showInput(resultText,pic,picText){
+function showOutput(resultText,pic,picText){
     $('#result').text(resultText); 
     $('#pic').attr('src',pic);
     $('#dc').text(picText); 
@@ -57,19 +57,19 @@ $(function(){
             $('#result').css("color","white");
             $('#html').css("background-image", "url(pic/birthday.png)");  
  
-            showInput("We have the same birthday",'pic/gif.gif'," ");
+            showOutput("We have the same birthday",'pic/gif.gif'," ");
         }
       
         else if(isNaN(integer)){
             console.log("User didn't type the year correctly");
             alert("PLEASE ENTER YOUR YEAR OF BIRTH!!!"); 
-            showInput("Please type your Year of birth correctly",
+            showOutput("Please type your Year of birth correctly",
             'pic/wat.jpg',
             "What Are You Doing? Just Do What It Said!!");
 
         } else if(integer<1853){
             console.log("DEAD");
-            showInput("omae wa mou shindeiru",
+            showOutput("omae wa mou shindeiru",
             'pic/dead.jpg',
             "You are already DEAD!! ..... if that isn't the case then, contact somebody!!! You gonna get famous by being the oldest human ever (:");
             
@@ -77,27 +77,25 @@ $(function(){
         } else if(integer>=1853&&integer<currentYear){
             console.log("Normal");
             if(rdmYear==0){
-            showInput("Sorry, but you have less then a year",ArrayPic[rdmPic],"You are really unlucky or just really old. I'm sure your did so many things to this world. stay healthy :D");
+            showOutput("Sorry, but you have less then a year",ArrayPic[rdmPic],"You are really unlucky or just really old. I'm sure your did so many things to this world. stay healthy :D");
             }
             
             else if(rdmYear==1){
 
-            showInput("You have only onr year left",ArrayPic[rdmPic],"make it count");    
+            showOutput("You have only onr year left",ArrayPic[rdmPic],"make it count");    
 
             }else{
 
-            showInput("You have "+rdmYear+" Years left",ArrayPic[rdmPic],ArrayPicText[rdmPicText]);
+          showOutput("You have "+rdmYear+" Years left",ArrayPic[rdmPic],ArrayPicText[rdmPicText]);
 
             }
 
             
 
         } else if(integer>currentYear&&integer<2500){
-
-            alert("ใจเย็นๆนะคุณยังไม่ได้เกิด")
+            showOutput("......","pic/joke.jpg","Am I a joke to you?");
         } else if(integer>=2500){
-
-            alert("ใช้ปีคริสต์ศักราช!!!!!!")
+          showOutput("ใช้ปีคริสต์ศักราช!!!!!!","pic/over9000.gif","ปีพุทธศักราช - 543 = ปีคริสต์ศักราช");
         }
 
         
