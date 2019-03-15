@@ -156,6 +156,12 @@ a:hover h2 {
 
 @media only screen and (max-width: 600px) {
     /* For mobile phones: Iphone 9/7/8 plus */
+ 
+ html{
+ height:130%;
+ min-height:130%;
+ }
+ 
     [class*="col-"] {
       width: 100%;
     }
