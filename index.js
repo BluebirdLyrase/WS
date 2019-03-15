@@ -17,7 +17,6 @@ $(function(){
         console.log(day + ',' + month);
         var ArrayPic = ['https://www.img.in.th/images/0fae5999e4c6cbe9670e45ba2f216beb.jpg',
         'https://www.img.in.th/images/a47955cabed17437d1cdecf901fbd9db.jpg',
-        'https://i.imgur.com/p7w5na5.jpg',
         'http://scientifist.com/wp-content/uploads/2017/03/FB-SuicideAI.jpg',
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVyd6wTibwH9M6WH-CBcU30VNbC7gTNruSXP0r8rSmNJODdcXyQg',
         'https://cdn.vox-cdn.com/thumbor/1-ERyN6iNc6GlY8q4ch7jyXJEpk=/0x0:1920x1080/1200x675/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/56442233/LDOJ_screenshot_1.0.jpg',
