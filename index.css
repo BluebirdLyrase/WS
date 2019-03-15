@@ -18,20 +18,13 @@ html{
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
- min-height: 100%;
- overflow: hidden;
+ overflow: scroll;
  }
 
 .flex-container {
 display: flex;
 flex-wrap: wrap;
 }
-
-.Content-container {
-    flex-wrap: wrap;
-    border: solid;
-    }
-
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -86,19 +79,6 @@ flex-wrap: wrap;
 .output{
     font-size: 25px;
 }
-
-body {
-    /* background-image: url("bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    min-height: 100%;
-    overflow: hidden; */
-  }
 
 .button{
     background-color: rgb(63, 63, 63); 

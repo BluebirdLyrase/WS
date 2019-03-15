@@ -25,7 +25,8 @@ $(function(){
         'http://scientifist.com/wp-content/uploads/2017/03/FB-SuicideAI.jpg',
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVyd6wTibwH9M6WH-CBcU30VNbC7gTNruSXP0r8rSmNJODdcXyQg',
         'https://cdn.vox-cdn.com/thumbor/1-ERyN6iNc6GlY8q4ch7jyXJEpk=/0x0:1920x1080/1200x675/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/56442233/LDOJ_screenshot_1.0.jpg',
-        'https://farm4.staticflickr.com/3264/2554428050_9ab3a2337d_b.jpg'
+        'https://farm4.staticflickr.com/3264/2554428050_9ab3a2337d_b.jpg',
+        'https://i.imgur.com/p7w5na5.jpg'
         ]
         var rdmPic = Math.floor(Math.random() * ArrayPic.length);
         var ArrayPicText = ['You know this is just a website right? a student project website.',
